@@ -9,7 +9,7 @@
 #include <N64.h>
 #include <gSP.h>
 #include <Log.h>
-#include <Revision.h>
+//#include <Revision.h>
 #include <FrameBuffer.h>
 #include <GLideNUI/GLideNUI.h>
 #include <DisplayWindow.h>
@@ -95,7 +95,7 @@ bool DisplayWindowMupen64plus::_start()
 # ifdef _DEBUG
 	sprintf(caption, "%s debug. Revision %s", pluginName, PLUGIN_REVISION);
 # else // _DEBUG
-	sprintf(caption, "%s. Revision %s", pluginName, PLUGIN_REVISION);
+	//sprintf(caption, "%s. Revision %s", pluginName, PLUGIN_REVISION);
 # endif // _DEBUG
 	CoreVideo_SetCaption(caption);
 
